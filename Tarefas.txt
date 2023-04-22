@@ -1,0 +1,28 @@
+-- RODAR PROJETO
+php artisan serve
+
+-- CRIAR MODELS
+php artisan make:model Advertise  --migration
+
+-- CRIAR MIGRATIONS
+php artisan make:migration update_users_table --table=users
+
+-- RODAR MIGRATIONS
+php artisan migrate --force
+php artisan migrate --fresh
+php artisan migrate:refresh 
+php artisan migrate:rollback
+
+
+-- CRIAR CONTROLLERS
+php artisan make:controller CategoriesController
+
+-- CRIAR SEEDERS
+php artisan make:seeder StatesSeeder
+
+-- RODAR SEEDERS
+php artisan db:seed
+
+-- CRIAR REQUESTS
+php artisan make:request CreateUserRequest
+
